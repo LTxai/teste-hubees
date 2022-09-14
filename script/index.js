@@ -15,15 +15,3 @@ companyForm.addEventListener('submit', (e) => {
 
     console.log(`O nome da empresa é: ${businessName.value}`)
 })
-
-// function checkCompany() {
-//     const businessNameValue = businessName.value
-//     const businessCnpjValue = businessCnpj.value
-//     const businessEmailValue = businessEmail.value
-//     const businessPhoneValue = businessPhone.value
-//     const addressValue = address.value
-//     const cityValue = city.value
-//     const countryValue = country.value
-//     const stateValue = state.value
-//     const zipCodeValue = zipCode.value
-// }
