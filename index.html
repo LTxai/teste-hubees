@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <script src="./script/index.js" defer></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
     <title>Formulário</title>
 </head>
@@ -64,11 +63,14 @@
                 <input type="text" id="city" name="city" class="input-text" placeholder="Município"><br>
             </div>
             <div class="field-container">
-                <button type="submit" class="submit-button">Enviar</button>
+                <!-- <div class="g-recaptcha" data-sitekey="6Lec3P4hAAAAAOx171VSD6r90pQU7c_YMfl6SxMj"></div> -->
+                <button type="submit" class="submit-button g-recaptcha"
+                    data-sitekey="6LciBf8hAAAAAIPMaHEGenRgfVq4Rvae2JZxev4F" data-callback='onSubmit'
+                    data-action='submit'>Enviar</button>
             </div>
         </form>
 
-        <form name="responsible-data" id="responsible-data">
+        <form name="responsable-data" id="responsable-data">
             <div class="field-container">
                 <label for="financial-name" class="input-label">Nome do responsável</label><br>
                 <input type="text" id="financial-name" name="financial-name" class="input-text"><br>
