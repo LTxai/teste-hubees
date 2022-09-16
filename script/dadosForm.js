@@ -1,0 +1,21 @@
+export const businessName = document.getElementById('business-name')
+export const businessCnpj = document.getElementById('business-cnpj')
+export const businessEmail = document.getElementById('business-email')
+export const businessPhone = document.getElementById('business-phone')
+export const address = document.getElementById('business-address')
+export const addressNumber = document.getElementById('address-number')
+export const city = document.getElementById('city')
+export const country = document.getElementById('country')
+export const state = document.getElementById('state')
+export const zipCode = document.getElementById('zip-code')
+
+
+export const financialName = document.getElementById('financial-name')
+export const financialEmail = document.getElementById('financial-email')
+export const financialPhone = document.getElementById('financial-phone')
+
+export const garageCode = document.getElementById('garage-code')
+export const timeDayInitial = document.getElementById('time-day-initial')
+export const timeDayFinal = document.getElementById('time-day-final')
+export const qtyGuest = document.getElementById('qty-guest')
+export const eventDay = document.getElementById('event-day')
