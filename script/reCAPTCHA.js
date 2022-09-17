@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 if (typeof grecaptcha === 'undefined') {
     grecaptcha = {};
 }
@@ -13,11 +15,11 @@ grecaptcha.ready = function (cb) {
 
 grecaptcha.ready(function () {
     grecaptcha.render("container", {
-        sitekey: RECAPTCHA_SITE_KEY
+        sitekey: proccess.env.RECAPTCHA_SITE_KEY
     });
 });
 
 function onSubmit(token) {
-    token = RECAPTCHA_SECRET_KEY
+    token = proccess.env.RECAPTCHA_SECRET_KEY
     document.getElementById("company-data").submit();
 }
