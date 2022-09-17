@@ -1,25 +1,8 @@
-require('dotenv').config()
-
-if (typeof grecaptcha === 'undefined') {
-    grecaptcha = {};
-}
-grecaptcha.ready = function (cb) {
-    if (typeof grecaptcha === 'undefined') {
-        const c = '___grecaptcha_cfg';
-        window[c] = window[c] || {};
-        (window[c]['fns'] = window[c]['fns'] || []).push(cb);
-    } else {
-        cb();
-    }
-}
-
-grecaptcha.ready(function () {
-    grecaptcha.render("container", {
-        sitekey: proccess.env.RECAPTCHA_SITE_KEY
+function onClick(e) {
+    e.preventDefault();
+    grecaptcha.ready(function () {
+        grecaptcha.execute('6LfwbwEiAAAAABupdD2xAU4GlQ-BHBzihGwl99v5', { action: 'submit' }).then(function (token) {
+            // Add your logic to submit to your backend server here.
+        });
     });
-});
-
-function onSubmit(token) {
-    token = proccess.env.RECAPTCHA_SECRET_KEY
-    document.getElementById("company-data").submit();
 }
