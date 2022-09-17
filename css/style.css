@@ -112,11 +112,11 @@ form {
   text-shadow: inset 0px 1px 0px rgba(245, 166, 35, 1);
   background: linear-gradient(rgba(248, 231, 28, 1), rgba(245, 166, 35, 1));
 }
-
+#button {
+  margin-left: 33%;
+}
 .submit-button:hover {
   background: linear-gradient(rgba(245, 166, 35, 1), rgba(248, 231, 28, 1));
-  width: 50%;
-  transition: all 0.7s 0s ease;
 }
 
 input::-webkit-outer-spin-button,
