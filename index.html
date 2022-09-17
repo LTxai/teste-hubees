@@ -27,86 +27,102 @@
                     <label for="business-name" class="input-label">Nome da empresa*</label><br>
                     <input type="text" id="business-name" name="business-name" class="input-text"
                         placeholder="Digite o nome da empresa"><br>
-                    <p id="hidden">Oi Brenda</p>
+                    <small class="hidden">Mensagem de erro</small>
                 </div>
                 <div class="field-container">
                     <label for="business-cnpj" class="input-label">CNPJ da empresa*</label><br>
                     <input type="number" id="business-cnpj" name="business-cnpj" class="input-text"
                         placeholder="Digite o CNPJ da empresa"><br>
+                    <small class="hidden">Mensagem de erro</small>
                 </div>
                 <div class="field-container">
                     <label for="business-email" class="input-label">E-mail da empresa*</label><br>
                     <input type="email" id="business-email" name="business-email" class="input-text"
-                        placeholder="Digite o e-mail da empresa" ><br>
+                        placeholder="Digite o e-mail da empresa"><br>
+                    <small class="hidden">Mensagem de erro</small>
                 </div>
                 <div class="field-container">
                     <label for="business-phone" class="input-label">Telefone da empresa*</label><br>
                     <input type="number" id="business-phone" name="business-phone" class="input-text"
-                        placeholder="Digite o telefone da empresa" ><br>
+                        placeholder="Digite o telefone da empresa (apenas números)"><br>
+                    <small class="hidden">Mensagem de erro</small>
                 </div>
                 <div class="field-container" onkeyup="">
                     <label for="zip-code" class="input-label">CEP*</label><br>
-                    <input type="number" id="zip-code" name="zip-code" class="input-text" placeholder="Qual o CEP?"
-                        ><br>
+                    <input type="number" id="zip-code" name="zip-code" class="input-text" placeholder="Qual o CEP?"><br>
+                    <small class="hidden">Mensagem de erro</small>
                 </div>
                 <div class="field-container">
                     <label for="city" class="input-label">Cidade</label><br>
                     <input type="text" id="city" name="city" class="input-text" placeholder="Município" disabled><br>
+                    <small class="hidden">Mensagem de erro</small>
                 </div>
                 <div class="field-container">
                     <label for="state" class="input-label">Estado</label><br>
                     <input type="text" id="state" name="state" class="input-text" placeholder="Estado" disabled><br>
+                    <small class="hidden">Mensagem de erro</small>
                 </div>
                 <div class="field-container">
                     <label for="state" class="input-label">País</label><br>
                     <input type="text" id="country" name="country" class="input-text" placeholder="País" disabled><br>
+                    <small class="hidden">Mensagem de erro</small>
                 </div>
                 <div class="field-container">
                     <label for="business-address" class="input-label">Endereço da empresa*</label><br>
                     <input type="text" id="business-address" name="business-address" class="input-text"
                         placeholder="Avenida, rua, praça, etc..." disabled><br>
+                    <small class="hidden">Mensagem de erro</small>
                 </div>
                 <div class="field-container">
                     <label for="address-number" class="input-label">Número*</label><br>
                     <input type="number" id="address-number" name="address-number" class="input-text"
-                        placeholder="Número do endereço" ><br>
+                        placeholder="Número do endereço"><br>
+                    <small class="hidden">Mensagem de erro</small>
                 </div>
                 <div class="field-container">
                     <label for="financial-name" class="input-label">Nome do responsável*</label><br>
                     <input type="text" id="financial-name" name="financial-name" class="input-text"
-                        placeholder="Nome do funcionário responsável" ><br>
+                        placeholder="Nome do funcionário responsável"><br>
+                    <small class="hidden">Mensagem de erro</small>
                 </div>
                 <div class="field-container">
                     <label for="financial-email" class="input-label">E-mail do responsável*</label><br>
                     <input type="email" id="financial-email" name="financial-email" class="input-text"
-                        placeholder="E-mail do funcionário responsável" ><br>
+                        placeholder="E-mail do funcionário responsável"><br>
+                    <small class="hidden">Mensagem de erro</small>
                 </div>
                 <div class="field-container">
                     <label for="financial-phone" class="input-label">Telefone do responsável*</label><br>
                     <input type="text" id="financial-phone" name="financial-phone" class="input-text"
-                        placeholder="Telefone do funcionário responsável" ><br>
+                        placeholder="Digite o telefone do responsável (apenas números)"><br>
+                    <small class="hidden">Mensagem de erro</small>
                 </div>
                 <div class="field-container">
                     <label for="garage-code" class="input-label">Código da garagem*</label><br>
                     <input type="text" id="garage-code" name="garage-code" class="input-text"
-                        placeholder="Código da garagem a ser alugada" ><br>
+                        placeholder="Código da garagem a ser alugada"><br>
+                    <small class="hidden">Mensagem de erro</small>
                 </div>
                 <div class="field-container">
                     <label for="event-day" class="input-label">Data do evento*</label><br>
-                    <input type="date" id="event-day" name="event-day" class="input-text" ><br>
+                    <input type="date" id="event-day" name="event-day" class="input-text" required><br>
+                    <small class="hidden">Mensagem de erro</small>
                 </div>
                 <div class="field-container">
                     <label for="time-day-initial" class="input-label">Horário inicial*</label><br>
-                    <input type="time" id="time-day-initial" name="time-day-initial" class="input-text" ><br>
+                    <input type="time" id="time-day-initial" name="time-day-initial" class="input-text" required><br>
+                    <small class="hidden">Mensagem de erro</small>
                 </div>
                 <div class="field-container">
                     <label for="time-day-final" class="input-label">Horário final*</label><br>
-                    <input type="time" id="time-day-final" name="time-day-final" class="input-text" ><br>
+                    <input type="time" id="time-day-final" name="time-day-final" class="input-text" required><br>
+                    <small class="hidden">Mensagem de erro</small>
                 </div>
                 <div class="field-container">
                     <label for="qty-guest" class="input-label">Quantidade de convidados para o evento*</label><br>
                     <input type="number" id="qty-guest" name="qty-guest" class="input-text"
-                        placeholder="Número de convidados" value="0" ><br>
+                        placeholder="Número de convidados" required><br>
+                    <small class="hidden">Mensagem de erro</small>
                 </div>
                 <div class="field-container">
                     <button type="submit" class="submit-button">Enviar</button>

@@ -7,8 +7,8 @@
 body {
   background: linear-gradient(
     336deg,
-    rgba(193, 101, 221, 1) 0%,
-    rgba(92, 39, 254, 1) 100%
+    rgba(9, 242, 227, 1) 0%,
+    rgba(0, 35, 106, 1) 100%
   );
   max-height: 100vh;
   overflow-y: hidden;
@@ -22,10 +22,7 @@ main {
 }
 
 form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 10px;
+  margin-top: 13px;
   max-width: 100%;
 }
 
@@ -38,8 +35,9 @@ form {
   margin: 10px 0;
   max-height: 100vh;
   overflow-y: scroll;
+  overflow-x: hidden;
   scrollbar-width: auto;
-  scrollbar-color: #c165dd #f0f8ff;
+  scrollbar-color: #042d4b #f0f8ff;
 }
 
 *::-webkit-scrollbar {
@@ -52,7 +50,7 @@ form {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #c165dd;
+  background-color: #042d4b;
   border-radius: 30px;
   border: 3px solid #f0f8ff;
 }
@@ -60,19 +58,18 @@ form {
 #company-data {
   display: grid;
   grid-template-columns: 1fr;
+  text-align: center;
 }
 
 .field-container {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: left;
+  margin-left: 10%;
 }
 
 .input-label {
-  color: #ff7f83;
+  color: #04266a;
   align-self: baseline;
-  margin-left: 10%;
 }
 
 .input-text {
@@ -87,13 +84,16 @@ form {
   background-color: rgba(92, 39, 254, 0.1);
 }
 
-#hidden {
+.field-container > small.hidden {
+  visibility: hidden;
+}
+
+.field-container > small.error {
+  visibility: visible;
   font-size: 10px;
   color: red;
-  margin-top: -20px;
+  margin-top: -5px;
   align-self: baseline;
-  margin-left: 10%;
-  visibility: hidden;
 }
 
 .submit-button {
