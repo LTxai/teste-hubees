@@ -1,11 +1,12 @@
 import { clearForm } from "./clearForm.js"
+import { companyForm, sendCompanyData } from "./sendCompanyData.js"
 import { checkData } from "./validaDados.js"
 
-export function onSubmitButton(form, action) {
-    form.addEventListener('submit', (e) => {
+export function onSubmitButton() {
+    companyForm.addEventListener('submit', (e) => {
         e.preventDefault()
         checkData()
-        action()
+        sendCompanyData()
         alert("Formulário enviado com sucesso")
         clearForm()
 

@@ -44,9 +44,7 @@ export const checkData = () => {
     const financialPhoneValue = financialPhone.value.trim()
     const garageCodeValue = garageCode.value.trim()
 
-    if (businessNameValue === '') {
-        setError(businessName, "Favor preencher o nome da empresa")
-    } else if (businessNameValue.length <= 2) {
+  if (businessNameValue.length <= 2) {
         setError(businessName, "O nome da empresa precisa ter pelo menos 2 caracteres")
     } else {
         setSuccess(businessName)
@@ -66,9 +64,7 @@ export const checkData = () => {
     } else {
         setSuccess(businessPhone)
     }
-    if (financialNameValue === '') {
-        setError(financialName, "Favor preencher o nome do responsável")
-    } else if (financialNameValue.length <= 2) {
+    if (financialNameValue.length <= 2) {
         setError(financialName, "O nome do responsável precisa ter pelo menos 2 caracteres")
     } else {
         setSuccess(financialName)
@@ -97,14 +93,15 @@ export const setError = (input, message) => {
 
     text.innerText = message
     text.className = 'error'
-    input.focus()
+    
 }
 
 const setSuccess = (input) => {
     const fieldContainer = input.parentElement;
     const text = fieldContainer.querySelector('small')
-    
+
     text.className = 'hidden'
+
 }
 
 function isEmail(email) {
