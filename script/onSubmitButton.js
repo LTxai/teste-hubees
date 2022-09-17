@@ -1,5 +1,4 @@
 import { clearForm } from "./clearForm.js"
-import { onClick } from "./reCAPTCHA.js"
 import { companyForm, sendCompanyData } from "./sendCompanyData.js"
 import { checkData } from "./validaDados.js"
 
@@ -10,6 +9,5 @@ export function onSubmitButton() {
         sendCompanyData()
         alert("Formulário enviado com sucesso")
         clearForm()
-        onClick()
     })
 }
