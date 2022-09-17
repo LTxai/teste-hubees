@@ -1,8 +1,3 @@
-// require('dotenv').config()
-
-
-// const token = process.env.RECAPTCHA_SECRET_KEY
-
 function onSubmit(e) {
     e.preventDefault();
     grecaptcha.ready(function () {
@@ -12,9 +7,4 @@ function onSubmit(e) {
     });
 }
 
-
-// function onSubmit(token) {
-//     document.getElementById("company-data").submit();
-// }
-
-onSubmit(token)
+onSubmit()
