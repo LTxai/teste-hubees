@@ -1,7 +1,7 @@
-require('dotenv').config()
+// require('dotenv').config()
 
 
-const token = process.env.RECAPTCHA_SECRET_KEY
+// const token = process.env.RECAPTCHA_SECRET_KEY
 
 function onSubmit(e) {
     e.preventDefault();
