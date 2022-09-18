@@ -116,9 +116,11 @@ form {
   box-shadow: inset 0px -3px 7px 0px rgba(255, 206, 48, 1);
   text-shadow: inset 0px 1px 0px rgba(245, 166, 35, 1);
   background: linear-gradient(rgba(248, 231, 28, 1), rgba(245, 166, 35, 1));
+  align-self: baseline;
 }
 #button {
   margin-left: 33%;
+  padding-bottom: 25px;
 }
 .submit-button:hover {
   background: linear-gradient(rgba(245, 166, 35, 1), rgba(248, 231, 28, 1));

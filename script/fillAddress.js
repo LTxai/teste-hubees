@@ -1,3 +1,5 @@
+import { address, city, country, state } from "./dadosForm.js";
+
 export const fillAddress = (endereco) => {
     address.value = endereco.logradouro;
     city.value = endereco.localidade;

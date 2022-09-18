@@ -10,3 +10,6 @@ export const validPhone = (phone) => {
     return /^\(?[1-9]{2}\)? ?(?:[2-8]|9[1-9])[0-9]{3}\-?[0-9]{4}$/.test(phone)
 }
 export const validGarageCode = (garageCode) => garageCode.length === 5
+
+export const validAddress = (address) => address.length > 1
+export const validNumber = numberAddress => numberAddress.length >= 1
