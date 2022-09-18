@@ -21,6 +21,11 @@ main {
   max-height: 100vh;
 }
 
+#form-header {
+  color: #042d4b;
+  text-align: center;
+}
+
 form {
   margin-top: 13px;
   max-width: 100%;
