@@ -4,7 +4,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
+main {
   background: linear-gradient(
     336deg,
     rgba(9, 242, 227, 1) 0%,
@@ -136,8 +136,53 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
+footer {
+  background-color: #000a31;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  padding: 30px;
+  width: 80%;
+}
+.logo-wraper {
+  width: 40%;
+}
+
+#logo-netpark {
+  width: 30%;
+}
+.slogan {
+  color: aliceblue;
+}
+
+.social-network {
+  width: 40%;
+  align-self: center;
+}
+
+.social-network-logos {
+  padding-left: 20px;
+}
+
 @media (max-width: 500px) {
   .form-wraper {
     width: 80%;
   }
+}
+
+#logo-netpark {
+  width: 70%;
+}
+.slogan {
+  display: none;
+}
+.social-network {
+margin-left: 30px;
+}
+.social-network-logos {
+  width: 20px;
+  padding-left: 10px;
 }
