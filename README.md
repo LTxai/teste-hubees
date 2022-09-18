@@ -7,6 +7,7 @@ Teste de emprego para a posição de Desenvolvedor Front-End Jr na empresa Hubee
 * Envia os dados para um endpoint fictício;
 * Estilização;
 * Responsividade;
+* Validação de dados;
 * [Deploy](https://teste-hubees.vercel.app)
 
 ## ⬆️ Funcionalidades extras ⬆️
@@ -15,5 +16,5 @@ Teste de emprego para a posição de Desenvolvedor Front-End Jr na empresa Hubee
 
 ## ⏳ Ainda não consegui implementar 100% ⏳
 * Google reCAPTCHA v3;
-* Validação de dados;
+
 
