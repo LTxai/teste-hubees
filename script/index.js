@@ -1,6 +1,7 @@
 import { businessCnpj, businessEmail, businessName, businessPhone, financialEmail, financialName, financialPhone, garageCode, zipCode } from "./dadosForm.js";
 import { onSubmitButton } from "./onSubmitButton.js";
 import { searchZipCode } from "./searchZipCode.js";
+import { showPayCompanyForm } from "./showPayCompanyForm.js";
 import { acceptBusinessEmail, acceptBusinessName, acceptBusinessPhone, acceptCnpj, acceptGarageCode, acceptResponsibleEmail, acceptResponsibleName, acceptResponsiblePhone } from "./verifyErrors.js";
 
 
@@ -20,3 +21,4 @@ financialPhone.addEventListener('focusout', acceptResponsiblePhone)
 garageCode.addEventListener('focusout', acceptGarageCode)
 
 
+showPayCompanyForm()
