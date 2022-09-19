@@ -43,8 +43,8 @@
                 </div>
                 <div class="field-container">
                     <label for="business-phone" class="input-label">Telefone da empresa*</label><br>
-                    <input type="number" min='0' id="business-phone" name="business-phone"
-                        class="input-text" required placeholder="Digite o telefone da empresa (apenas números)"><br>
+                    <input type="number" min='0' id="business-phone" name="business-phone" class="input-text" required
+                        placeholder="Digite o telefone da empresa (apenas números)"><br>
                     <small id='error-text' class="hidden">Mensagem de erro</small>
                 </div>
                 <div class="field-container" onkeyup="">
@@ -79,8 +79,8 @@
                 </div>
                 <div class="field-container">
                     <label for="address-number" class="input-label">Número*</label><br>
-                    <input type="number" min="0" id="address-number" name="address-number"
-                        class="input-text" required placeholder="Número do endereço"><br>
+                    <input type="number" min="0" id="address-number" name="address-number" class="input-text" required
+                        placeholder="Número do endereço"><br>
                     <small id='error-text' class="hidden">Mensagem de erro</small>
                 </div>
                 <div class="field-container">
@@ -123,10 +123,54 @@
                     <small id='error-text' class="hidden">Mensagem de erro</small>
                 </div>
                 <div class="field-container">
-                    <label for="qty-guest" class="input-label">Quantidade de convidados para o evento*</label><br>
-                    <input type="number" min="0" id="qty-guest" name="qty-guest" class="input-text"
-                        required placeholder="Número de convidados"><br>
-                    <small id='error-text' class="hidden">Mensagem de erro</small>
+                    <legend class="input-label">A empresa que está contratando é a mesma que pagará pelo serviço?
+                    </legend><br>
+                    <div id="radio-container">
+                        <input type="radio" id="hire-pay-company" name="hire-pay-company" class="input-text radio"
+                            checked> <label for="hire-pay-company" value="Sim" class="radio-label">Sim</label>
+                        <input type="radio" id="pay-company" name="hire-pay-company" class="input-text radio" value="Não"> <label
+                            for="hire-pay-company" class="radio-label negative">Não</label><br>
+                    </div>
+                </div>
+                <div class="pay-company-info" id="pay-company-info">
+                    <h4>Informações da empresa que pagará pelo serviço</h4>
+                    <div class="field-container">
+                        <label for="pay-company-name" class="input-label">Nome da empresa</label><br>
+                        <input type="text" id="pay-company-name" name="pay-company-name" class="input-text"
+                            placeholder="Digite o nome da empresa pagante"><br>
+                        <small id='error-text' class="hidden">Mensagem de erro</small>
+                    </div>
+                    <div class="field-container">
+                        <label for="pay-company-email" class="input-label">E-mail da empresa</label><br>
+                        <input type="email" id="pay-company-email" name="pay-company-email" class="input-text"
+                            placeholder="Digite o e-mail da empresa pagante"><br>
+                        <small id='error-text' class="hidden">Mensagem de erro</small>
+                    </div>
+                    <div class="field-container">
+                        <label for="pay-company-cnpj" class="input-label">CNPJ</label><br>
+                        <input type="text" id="pay-company-cnpj" name="pay-company-cnpj" class="input-text"
+                            placeholder="Digite o CNPJ da empresa pagante"><br>
+                        <small id='error-text' class="hidden">Mensagem de erro</small>
+                    </div>
+                    <div class="field-container">
+                        <label for="pay-responsible-name" class="input-label">Nome do responsável pelo
+                            pagamento</label><br>
+                        <input type="text" id="pay-responsible-name" name="pay-responsible-name" class="input-text"
+                            placeholder="Nome do responsável pelo pagamento"><br>
+                        <small id='error-text' class="hidden">Mensagem de erro</small>
+                    </div>
+                    <div class="field-container">
+                        <label for="pay-responsible-email" class="input-label">E-mail do responsável pelo
+                            pagamento</label><br>
+                        <input type="email" id="pay-responsible-email" name="pay-responsible-email" class="input-text"
+                            placeholder="E-mail do responsável pelo pagamento"><br>
+                        <small id='error-text' class="hidden">Mensagem de erro</small>
+                    </div>
+                    <div class="field-container">
+                        <label for="general-obs" class="input-label">Observações</label><br>
+                        <textarea id="general-obs" name="general-obs" class="input-text textarea"
+                            placeholder="Algo mais que devemos saber?" style="resize: none"></textarea><br>
+                    </div>
                 </div>
                 <div class="field-container" id="button">
                     <button type="submit" class="submit-button">Enviar</button>

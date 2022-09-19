@@ -100,6 +100,31 @@ form {
   margin-top: -5px;
   align-self: baseline;
 }
+#radio-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.pay-company-info>h4 {
+  color: #000a31;
+  margin-bottom: 15px;
+}
+.radio {
+  width: 20px;
+}
+.radio-label {
+  margin-left: 10px;
+  font-size: 15px;
+  color: #000a31;
+}
+.radio-label:first-of-type {
+  margin-right: 10px;
+}
+
+.textarea {
+  height: 80px;
+}
 
 .submit-button {
   font-size: 15px;

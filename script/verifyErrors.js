@@ -77,6 +77,6 @@ export const acceptGarageCode = () => {
     if (validGarageCode(codeValue)) {
         setSuccess(garageCode)
     } else {
-        setError(garageCode, "O código da caragem precisa ter 5 caracteres")
+        setError(garageCode, "O código da caragem precisa ter 3 caracteres")
     }
 }
