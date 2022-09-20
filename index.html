@@ -123,13 +123,17 @@
                     <small id='error-text' class="hidden">Mensagem de erro</small>
                 </div>
                 <div class="field-container">
+                    <label for="qty-guest" class="input-label">Quantidade de convidados</label><br>
+                    <input type="number" min="0" id="qty-guest" name="qty-guest" class="input-text"><br>
+                </div>
+                <div class="field-container">
                     <legend class="input-label">A empresa que está contratando é a mesma que pagará pelo serviço?
                     </legend><br>
                     <div id="radio-container">
                         <input type="radio" id="hire-pay-company" name="hire-pay-company" class="input-text radio"
                             checked> <label for="hire-pay-company" value="Sim" class="radio-label">Sim</label>
-                        <input type="radio" id="pay-company" name="hire-pay-company" class="input-text radio" value="Não"> <label
-                            for="hire-pay-company" class="radio-label negative">Não</label><br>
+                        <input type="radio" id="pay-company" name="hire-pay-company" class="input-text radio"
+                            value="Não"> <label for="hire-pay-company" class="radio-label negative">Não</label><br>
                     </div>
                 </div>
                 <div class="pay-company-info" id="pay-company-info">
